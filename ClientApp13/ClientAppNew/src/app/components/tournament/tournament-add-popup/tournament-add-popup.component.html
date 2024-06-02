@@ -1,0 +1,13 @@
+<app-form-popup  [title]="'Tournament.Add' | translate" [itemHead]="itemHead"  [content]="content" [footer]="footer" (closePopup)="onClose()">
+    <ng-template #itemHead></ng-template>
+    <ng-template #content>
+        <app-textbox [label]="'Tournament.Name' | translate" [(value)]="currentData.Name" [name]="'name'" ></app-textbox>
+        <!-- <app-textbox [isShowLabel]="false" [(value)]="currentData." [name]="'searchText'" [icon]="'fa-solid fa-magnifying-glass'" [iconLeft]="true"></app-textbox> -->
+    </ng-template>
+    <ng-template #footer>
+        <div class="flex justify-content-end w-100">
+            <app-button [Type]="'btn'" [color]="'primary'" [text]="'Save' | translate" [padding]="'0 0 0 12px'" [width]="'56px'"></app-button>
+      
+        </div>      
+    </ng-template>
+</app-form-popup>

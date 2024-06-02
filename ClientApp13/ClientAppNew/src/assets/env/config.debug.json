@@ -1,0 +1,8 @@
+{
+    "FacebookOauthSetting" :{
+        "Url": "https://graph.facebook.com/v7.0/oauth/authorize",
+        "ClientId": "1247303802710907",
+        "ClientSecretId" :"ce0f64a4553afd260e0384c57307b930",
+        "RedirecUri": "https://localhost:7226//api/facebook/auth-callback"
+    }
+}

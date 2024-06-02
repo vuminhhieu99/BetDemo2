@@ -1,0 +1,12 @@
+{
+  "Serilog": {
+    "Part": {
+      "Info": "temp/logs/logDemo.txt",
+      "Debug": "temp/logs/debug/.log",
+      "Error": "temp/logs/error/.log"
+    }
+  },
+  "QueryLog": {
+    "user_log_fail": "Đăng nhập thất bại"
+  }
+}

@@ -1,0 +1,28 @@
+<div class="page-sidebar flex flex-column align-items-center">
+  <div class="form-temp flex align-items-center">
+    <div class="avatar flex align-items-center justify-content-center">
+      <i class="fa-solid fa-school"></i>
+    </div>
+    <div class="content-sidebar flex align-items-center">
+      <p class="color-grey6 line-text-1">{{"Fun88" | translate}}</p>
+    </div>
+  </div>
+  <ul class="form-menu flex-column">
+    <!-- <li *ngFor="let module of modules" class="menu-item" [ngClass]="{'active' : module.active}" (click)="chooseModule(module)"> -->
+      <li *ngFor="let module of modules" class="menu-item">
+      <a [routerLink]="module.route"
+      routerLinkActive="active" class="menu-link flex align-items-center">
+        <div class="form-icon = flex justify-content-center">
+          <i class="fa-solid {{module.icon}}"></i>
+        </div>
+        <div class="content-sidebar flex align-items-center">
+          <p class="line-text-1">{{'Module.' + module.name | translate}}</p>
+        </div>
+      </a>
+    </li>   
+  </ul>
+</div>
+<div class="menu-sidebar-mini hover flex justify-content-center align-items-center"
+  (click)="showSideBar()">
+  <i class="fas fa-bars"></i>
+</div>

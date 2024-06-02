@@ -1,0 +1,15 @@
+<app-form-list [isCheckboxList]="isCheckboxList" [toolbar]="toolbar" [toolbarCheckbox]="toolbarCheckbox" [grid]="grid" [sidebarRight]="sidebarRight">
+    <ng-template #toolbar>
+        <div class="width-100 flex flex-row justify-content-between align-items-center">
+            <h2 class="m-0 ml-2 mr-1">{{'Roles' | translate}}</h2>
+            <div class="flex flex-row justify-content-between align-items-center">
+                <app-textbox [isShowLabel]="false" [(value)]="searchText" [name]="'searchText'" [icon]="'fa-solid fa-magnifying-glass'" [iconLeft]="true"></app-textbox>
+                <app-button [icon]="'fa-solid fa-plus'" [Type]="'bg-gradient'" [color]="'primary'" (btnClick)="addRequest()" [text]="'RoleTrans.Add' | translate" [padding]="'0 12px'"></app-button>
+            </div>
+        </div>      
+       
+    </ng-template>
+    <ng-template #toolbarCheckbox><p>toolbarCheckbox</p></ng-template>
+    <ng-template #grid><app-grid [moduleCode]="moduleCode.RoleGroup" [columns]="columns"></app-grid></ng-template>
+    <ng-template #sidebarRight></ng-template>    
+</app-form-list>

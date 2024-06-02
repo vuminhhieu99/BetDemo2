@@ -1,0 +1,62 @@
+{
+    "module": [
+        {   
+            "id" : "1",       
+            "LayoutCode" : "Dashboard",
+            "DisplayName" : "Phân tích",
+            "icon" : "fa-tachometer-alt",
+            "route": "/dashboard",
+            "permission": "1"
+        },
+        {   
+            "id": "2",
+            "LayoutCode" : "BetNow",
+            "DisplayName" : "Cược ngay",
+            "icon" : "fa-circle-question",
+            "route": "/topic-request",
+            "permission": "2"
+
+        },
+        {   
+            "id": "3",
+            "LayoutCode" : "Match",
+            "DisplayName" : "Trận đấu",
+            "icon" : "fa-circle-question",
+            "route": "/topic-request",
+            "permission": "4"
+        },
+        {   
+            "id ": "4",
+            "LayoutCode" : "Tournament",
+            "DisplayName" : "Giải đấu",
+            "icon" : "fa-clipboard-question",
+            "route": "/tournament",
+            "permission": "8"
+        },
+        {   
+            "id": "5",
+            "LayoutCode" : "Team",
+            "DisplayName" : "Đội bóng",
+            "icon" : "fa-person-circle-question",
+            "route": "/team",
+            "permission": "16"
+
+        },
+        {   
+            "id": "6",
+            "LayoutCode" : "User",
+            "DisplayName" : "Người dùng",
+            "icon" : "fa-users",
+            "route": "/user",
+            "permission": "32"
+        },
+        {   
+            "id": "7",
+            "LayoutCode" : "Role",
+            "DisplayName" : "Vai trò",
+            "icon" : "fa-ruler",
+            "route": "/role",            
+            "permission": "32"
+        }        
+    ]
+}

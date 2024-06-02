@@ -1,0 +1,16 @@
+
+<div class="flex flex-column h-100 ">
+    <div class="flex justify-content-between">
+        <h2 mat-dialog-title>{{title}}          
+        </h2>
+        <div>
+            <ng-container *ngTemplateOutlet="itemHead"></ng-container>  
+            <div class="close" (click)="close($event)"> 
+                <i class="fa-sharp fa-solid fa-circle-xmark" ></i>      
+            </div>
+        </div>
+    </div>
+    
+    <div class="content"> <ng-container *ngTemplateOutlet="content"></ng-container> </div>   
+    <ng-container *ngTemplateOutlet="footer"></ng-container>  
+</div>

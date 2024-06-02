@@ -1,0 +1,8 @@
+<div class="form-group">
+    <div class="flex" [ngClass]="{'flex-row': isHorizontal, 'flex-column': !isHorizontal}">
+        <div class="col-form-label" *ngIf="isShowLabel">{{label}}</div>
+        <select class="form-control select2" #input style="width: 100%;" [disabled]="disabled">
+            <option #defaut>--</option>
+        </select>
+    </div>
+</div>

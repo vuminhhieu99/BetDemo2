@@ -1,0 +1,13 @@
+<div class="form-group" >
+    <div class="flex" [ngClass]="{'flex-row': isHorizontal, 'flex-column': !isHorizontal}">
+        <div class="col-form-label" *ngIf="isShowLabel">{{label}}</div>
+        <div class="d-inline" [ngClass]="Type">
+            <input #checkbox type="checkbox" id="checkboxID" [checked]="value" (change)="dataChanged(checkbox.checked)">
+            <label for="checkboxID">{{lableAfterCheck}}
+            </label>
+        </div>
+    </div> 
+    <div class="error line-text-1" *ngIf="error.isError">
+        *{{error.message}}
+    </div> 
+</div>

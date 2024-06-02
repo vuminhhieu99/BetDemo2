@@ -1,0 +1,16 @@
+{
+  "LogConfig": {
+    "Serilog": {
+      "Part": {
+        "Info": "temp/logs/info/.log",
+        "Debug": "temp/logs/debug/.log",
+        "Error": "temp/logs/error/.log"
+      }
+    },
+    "user_login_fail": "Đăng nhập thất bại",
+    "userid_fail": "Không có user id",
+    "username_fail": "Không có user name",
+    "username_layoutcode": "Không có layoutcode",
+    "Username_Token": "Không lấy được token"
+  }
+}

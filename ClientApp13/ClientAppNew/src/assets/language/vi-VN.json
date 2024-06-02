@@ -1,0 +1,40 @@
+{
+    "Fun88": "FUN88",
+    "Module": {
+        "Dashboard" : "Tổng quan",
+        "Country": "Quốc gia",
+        "Tournament" : "Giải đấu",     
+        "Request" : "Yêu cầu",
+        "MyRequest" : "Yêu cầu của tôi",
+        "TopicRequest" : "Chủ đề yêu cầu",
+        "Student" : "Sinh viên",
+        "Teacher" : "Giáo viên",
+        "Roles": "Quyền",
+        "RoleGroup": "Nhóm quyền",
+        "Users": "Người dùng",
+        "UserGroup" : "Nhóm người dùng",
+        "Haravan": "Haravan"
+    },    
+    "Login": {
+        "Username" : "Tài khoản",
+        "Password" : "Mật khẩu",
+        "RememberMe" : "Nhớ mật khẩu",
+        "Fail" : "Tài khoản hoặc mật khẩu không đúng"
+    },
+    "RoleTrans": {
+        "Add": "Thêm quyền"
+    },
+    "ErrorService":"Lỗi hệ thống",
+    "Tournament": {
+        "Add": "Thêm giải đấu",
+        "Name": "Tên giải đấu",
+        "Logo": "Logo"
+    },
+    "Haravan": {
+        "Connect": "Kết nối haravan"
+    },
+    "Save" : "Lưu",
+    "SaveAndClose" : "Lưu và đóng",
+    "Cancel" : "Hủy",
+    "Close" : "Đóng"    
+}

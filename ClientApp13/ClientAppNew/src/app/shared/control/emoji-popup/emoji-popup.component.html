@@ -1,0 +1,18 @@
+<div class="wrap" (click)="$event.stopPropagation();">
+    <div class="emoji-content">
+        <prefect-scrollbar class="body flex-grow" fxFlex="auto">
+            <div *ngFor="let emoji of emojiList">
+                <p class="type" id="{{emoji.type}}">{{'EmojiType.' + emoji.type | translate}}</p>
+                <div class="grid-box">
+                    <p class="item-emoji" *ngFor="let data of emoji.data" (click)="choose(data)">{{data}}</p>
+                </div>
+            </div>
+
+        </prefect-scrollbar>
+    </div>
+    <div class="category-type flex justify-content-center align-items-center">
+        <ng-container *ngFor="let category of emojiCategoryList">
+            <div class="item-category" matToo>{{category.text}}</div>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+package: angular
+npm i @ngx-translate/core
+npm i -g npm
+npm i --save lodash
+npm i --save-dev @types/lodash
+ng add @angular/material
+npm install ng-image-slider --save
+npm install ngx-perfect-scrollbar --save
+npm install material-tooltip --save

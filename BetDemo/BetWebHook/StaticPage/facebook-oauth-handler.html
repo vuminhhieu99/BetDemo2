@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập Facebook</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/styles/themes/primary.min.css"> -->
+    <script type="text/javascript" src="../assets/scripts/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../assets/scripts/jquery/jquery.hashQuery.js"></script>
+
+</head>
+
+<body>
+    <div>vmhieu</div>
+    <script type="text/javascript">
+        const oauthSubDomain = "crm2-oauth.";
+        var success = false,
+            token = "",
+            state = "",
+            origin = "";
+
+        /**
+         * Handle OAuth redirect
+         * CreatedBy LDNgoc 20.06.2020
+         */
+        function handleOAuth() {
+            success = true;
+            var url = window.location.href;
+
+            var queryParm = window.location.search;
+            console.log(queryParm);
+            var urlParams = new URLSearchParams(queryParm);          
+            state = urlParams.get('state');
+            token = urlParams.get('access_token');
+
+            console.log("state: " + state + "; token: " + token);
+
+
+            if (opener) {
+                opener.OAuthCallback(success, token);
+            }
+            window.close();
+        }
+
+        //Document ready
+        $(document).ready(function () {
+            handleOAuth();
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

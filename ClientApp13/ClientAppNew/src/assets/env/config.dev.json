@@ -1,0 +1,18 @@
+{
+    "FacebookOauthSetting" :{
+        "Url": "https://graph.facebook.com/v7.0/oauth/authorize",
+        "ClientId": "1247303802710907",
+        "State": "KeySecretTestForBetProjection",
+        "ClientSecretId" :"ce0f64a4553afd260e0384c57307b930",
+        "RedirecUri": "https://localhost:7226/api/facebook/auth-callback",
+        "Scope": "email,publish_actions"
+    },
+    "HaravanOAuth":{
+        "Url": "https://accounts.haravan.com/connect/authorize",
+        "ClientApp": "81727e6749369a9162bc186e18d36076",
+        "ResponseMode": "form_post",
+        "ResponseType": "code id_token",
+        "Scope": "openid profile email org userinfo grant_service wh_api com.read_costomers com.read_products com.read_orders",
+        ""
+    }
+}

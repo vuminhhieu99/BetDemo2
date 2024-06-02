@@ -1,0 +1,7 @@
+{  
+  "QuerySql": {
+    "User": {
+      "Login": "SELECT * FROM user WHERE UserName = @UserName AND PasswordMd5 = @PasswordMd5;"
+    }
+  }
+}

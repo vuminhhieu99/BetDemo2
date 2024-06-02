@@ -1,0 +1,6 @@
+{
+  "ConnectionStrings": {
+    "MysqlConnectionString": "server=localhost;user=root;password=m123;database=betdata"
+  },
+  "NameWorhder": "QuartzDemo"
+}

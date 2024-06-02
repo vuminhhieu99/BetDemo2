@@ -1,0 +1,64 @@
+@import "../../../../styles.scss";
+
+::ng-deep{
+    .emoji-content .ps__rail-x{
+        display: none !important;
+    }
+}
+:host{
+    .wrap{
+        width: 320px;
+        height: auto;
+        .emoji-content{
+            width: 100%;
+            height: 280px;
+            border-bottom: 1px solid $color-grey1;
+            .type{
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                padding-left: 8px;
+            }
+            .grid-box{
+                display: grid;
+                grid-template-columns: repeat(8 12.5%);
+                .item-emoji{
+                    display: inline-block;
+                    height: 40px;
+                    width: 100%;
+                    line-height: 40px;
+                    text-align: center;
+                    margin: 0;
+                    font-size: 18px;
+                    @include border-radius(50%);
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $color-grey3;
+                    }
+                }
+            }
+        }
+        .category-type{
+            width: 100%;
+            height: 33px;
+            margin-top: 6px;
+            .item-category{
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                text-align: 30px;
+                font-size: 10px;
+                text-align: center;
+                margin: 0px 2px;
+                @include border-radius(50%);
+                cursor: pointer;
+                &:hover{
+                    background-color: $color-grey3;
+                }
+                &:focus{
+                    background-color: $color-grey;
+                }
+            }
+        }
+    }
+}

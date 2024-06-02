@@ -1,0 +1,13 @@
+@import "../../../../styles.scss";
+
+:host{
+    .close{
+        cursor: pointer;
+    }
+    .content{
+        height: 100%;
+        flex-grow: 1;
+        margin-bottom: 8px;
+        overflow-y: auto;
+    }
+}
